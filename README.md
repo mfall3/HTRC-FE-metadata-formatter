@@ -1,7 +1,7 @@
 HTRC-FE-metadata-formatter
 ==========================
 
-Reads a hathifiles text file one line at a time and creates HTRC Feature Extraction metadata json files.
+Reads a hathifiles text file one line at a time and creates HTRC Feature Extraction metadata json files for use in generating Feature Extraction files as described at https://sandbox.htrc.illinois.edu/HTRC-UI-Portal2/Features.
 
 Usage: python3 hathifiles2FE.py hathifile outDirectory
 

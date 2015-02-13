@@ -34,7 +34,7 @@ batchtime = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d'+'T'+'%H:%M')
 # read in one line at a time, write out one file at a time
 with open(hathifile) as f:
 
-    rows = (line.split('t') for line in f)
+    #rows = (line.split('t') for line in f)
 
     for line in f:
         row = (line.split('\t'))

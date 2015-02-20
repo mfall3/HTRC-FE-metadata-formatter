@@ -82,7 +82,8 @@ with open(outDir + os.sep + "hathifiles2FE_log_" + batchtime + ".txt", 'w+') as 
                 cleanVolumeId = cleanVolumeId.replace('/', "=")
                 if not os.path.exists(outDir + os.sep  + institutionId):
                     os.makedirs(outDir + os.sep + institutionId)
-                outfileName = outDir + os.sep + institutionId + os.sep + cleanVolumeId + '.json'
+                # remove dollar sign if it is present to be compatible with text zip file names
+                outfileName = (outDir + os.sep + institutionId + os.sep + cleanVolumeId + '.json').replace('$', '')
 
                 with open(outfileName, 'w') as outfile:
                     print("writing " + outfileName + " ..." )
